@@ -140,7 +140,7 @@ class ViewController: UIViewController {
     }
     
     func fetchForecast(with coordinate: CLLocationCoordinate2D) {
-        let urlStr = "https://api2.sktelecom.com/weather/forecast/3days?version=1&lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&appKey=df1f6490-e3c9-48e8-af94-e7f686cdb558"
+        let urlStr = "https://api2.sktelecom.com/weather/forecast/3days?version=1&lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&appKey=appKey"
         
         guard let url = URL(string: urlStr) else {
             return
@@ -195,7 +195,7 @@ class ViewController: UIViewController {
     
     
     func fetchSummary(with coordinate: CLLocationCoordinate2D) {
-        let urlStr = "https://api2.sktelecom.com/weather/current/minutely?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&appKey=df1f6490-e3c9-48e8-af94-e7f686cdb558"
+        let urlStr = "https://api2.sktelecom.com/weather/current/minutely?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&appKey=appKey"
         
         guard let url = URL(string: urlStr) else {
             return
